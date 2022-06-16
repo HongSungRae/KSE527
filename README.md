@@ -52,6 +52,8 @@
 ![Augmentation](https://github.com/HongSungRae/KSE527/blob/main/archive/augmentation.jpg?raw=true)
 
 ### 3.2 Experiment Results
+![](https://github.com/HongSungRae/KSE527/blob/main/archive/table1.png?raw=true)
+![](https://github.com/HongSungRae/KSE527/blob/main/archive/table2.png?raw=true)
 
 ## Acknowledgement in Korean
 - 플젝 잘 끝내서 모두에게 감사합니다.
