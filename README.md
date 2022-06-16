@@ -49,6 +49,7 @@
 
 ## 3. Results
 ### 3.1 Image Augmentation For Audio Spectrogram
+![Augmentation](https://github.com/HongSungRae/KSE527/blob/main/archive/augmentation.jpg?raw=true)
 
 ### 3.2 Experiment Results
 
