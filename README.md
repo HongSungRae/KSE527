@@ -11,7 +11,38 @@
 3. requirements libraries를 확인합니다 : ```pip install -r requirements.txt```
 
 ### 2.2 Dataset Download
-
+1. fma_small과 fma_medium을 npy file로 미리 변환한 데이터를 링크에서 다운로드합니다.
+2. ```./data``` 에 다운로드 받은 두 폴더를 모두 넣어주세요.
+3. ```ffmpeg.exe```를 링크에서 다운받아서 LOCAL ```./```에 넣어주세요.
+---
+**여러분의 Local 환경이 아래 그림과 같다면 모든 준비가 끝났습니다!**
+---
+```
+<KSE527>
+                    ├ <data>
+                        └ <KEMDy19>
+                            ├ <annotation>
+                            ├ <ECG>
+                            ├ <EDA>
+                            ├ <TEMP>
+                            ├ <wav>
+                            ├ annotation.csv
+                            ├ df_listener.csv
+                            ├ df_speaker.csv
+                            └ embedding_768.npy
+                    ├ constants.py
+                    ├ dataset.py
+                    ├ loss.py
+                    ├ main.py
+                    ├ metric.py
+                    ├ model.py
+                    ├ utils.py
+                    ├ EDA.ipynb
+                    ├ prerprocessing.ipynb
+                    ├ LICENSE
+                    ├ requirements.txt
+                    └ README.md                           
+```
 
 
 ### 2.3 Training + Inference
