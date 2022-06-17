@@ -12,10 +12,10 @@
 
 ### 2.2 Dataset Download
 1. Download ```fma_small``` and ```fma_medium``` from the [LINK](https://github.com/mdeff/fma).
-2. ```./data``` 에 다운로드 받은 두 폴더를 모두 넣어주세요.
-3. ```ffmpeg.exe```를 링크에서 다운받아서 LOCAL ```./```에 넣어주세요.
+2. Put ```fma_small``` and ```fma_medium``` to ```./data``` folder.
+3. Download ```ffmpeg.exe``` from [LINK](https://www.ffmpeg.org/download.html) and put it to ```./```.. For Koreans [this page](https://m.blog.naver.com/chandong83/222095346417) can help you.
 ---
-**여러분의 Local 환경이 아래 그림과 같다면 모든 준비가 끝났습니다!**
+*If your Local environment is as below, you're all set!*
 ---
 ```
 <KSE527>
@@ -42,8 +42,19 @@
     └ README.md                           
 ```
 
+### 2.3 Data Pre-processing
+- You need to convert all ```.wma``` files to ```.npy```(because of processing speed).
+1. For Fma_medium
+```
+python preprocessing.py --size medium
+```
 
-### 2.3 Training + Inference
+2. For Fma_small
+```
+python preprocessing.py --size small
+```
+
+### 2.4 PreTraining -> Transfer Learning -> Inference
 
 ## 3. Results
 ### 3.1 Image Augmentation For Audio Spectrogram
