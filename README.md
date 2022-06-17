@@ -56,16 +56,43 @@ python preprocessing.py --size medium
 python preprocessing.py --size small
 ```
 
-### 2.4 PreTraining -> Transfer Learning -> Inference
+### 2.4 PreTraining -> Transfer Learning and Inference
 1. PreTraining
+- Argparsers
+    - num_epochs
+    - batch_size
+    - size : ```small``` or ```medium```. It means dataset size.
+    - optim : ```SGD``` or ```Adam```
+    - backbone : one of ```[resnet50, resnet101, resnet152]```
+    - aug : ```basic``` or ```image```. *basic* means audio augmentation like time strentching and frequency masking.
+    - lam : hyper parameter for mixup lambda. (0,1)
+    - aug_p : augmenatation probability. (0,1)
+- 👇 Example
 ```
+python train_simsiam.py --num_epochs 100
+                        --batch_size 64
+                        --size small
+                        --backbone resnet101
+                        --aug image
+                        --lam 0.7
+                        --aug_p 0.6
 ```
-2. Transfer learning to downstream task
+2. Transfer learning to downstream task and test
+- Argparsers
+    - num_epochs
+    - batch_size
+    - size
+    - aug
+    - exp_path : go to ```./exp```folder. There will be a model path you trained before with ```train_simsiam.py```. For example ```./exp/154874```, give command ```--exp_path 154874```
+- 👇 Example
 ```
+python transfer.py --num_epochs 100
+                   --batch_size 64
+                   --size small
+                   --aug image
+                   --exp_path 154874
 ```
-3. Inference and performance
-```
-```
+
 
 ## 3. Results
 ### 3.1 Image Augmentation For Audio Spectrogram
