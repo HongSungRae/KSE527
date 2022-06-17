@@ -19,29 +19,29 @@
 ---
 ```
 <KSE527>
-                    ├ <data>
-                        └ <KEMDy19>
-                            ├ <annotation>
-                            ├ <ECG>
-                            ├ <EDA>
-                            ├ <TEMP>
-                            ├ <wav>
-                            ├ annotation.csv
-                            ├ df_listener.csv
-                            ├ df_speaker.csv
-                            └ embedding_768.npy
-                    ├ constants.py
-                    ├ dataset.py
-                    ├ loss.py
-                    ├ main.py
-                    ├ metric.py
-                    ├ model.py
-                    ├ utils.py
-                    ├ EDA.ipynb
-                    ├ prerprocessing.ipynb
-                    ├ LICENSE
-                    ├ requirements.txt
-                    └ README.md                           
+    ├ <data>
+        ├ <fma_medium_npy>
+            ├ <annotation>
+            ├ <ECG>
+            ...
+            └ embedding_768.npy
+        ├ <fma_small_npy>
+            ├ <annotation>
+            ├ <ECG>
+        ├ genre_dic_medium.npy
+        └ genre_dic_small.npy
+    ├ constants.py
+    ├ dataset.py
+    ├ loss.py
+    ├ main.py
+    ├ metric.py
+    ├ model.py
+    ├ utils.py
+    ├ EDA.ipynb
+    ├ prerprocessing.ipynb
+    ├ LICENSE
+    ├ requirements.txt
+    └ README.md                           
 ```
 
 
