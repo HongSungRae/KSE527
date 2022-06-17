@@ -22,6 +22,8 @@
     ├ <data>
         ├ <fma_medium>
         ├ <fma_small>
+        ├ tracks_medium.csv
+        ├ tracks_small.csv
         ├ genre_dic_medium.npy
         └ genre_dic_small.npy
     ├ <models>
