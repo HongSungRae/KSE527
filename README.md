@@ -11,7 +11,7 @@
 3. Check the requirements. : ```pip install -r requirements.txt```
 
 ### 2.2 Dataset Download
-1. Download ```fma_small``` and ```fma_medium``` from the [](https://github.com/mdeff/fma).
+1. Download ```fma_small``` and ```fma_medium``` from the [LINK](https://github.com/mdeff/fma).
 2. ```./data``` 에 다운로드 받은 두 폴더를 모두 넣어주세요.
 3. ```ffmpeg.exe```를 링크에서 다운받아서 LOCAL ```./```에 넣어주세요.
 ---
