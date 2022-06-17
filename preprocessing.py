@@ -10,6 +10,7 @@ warnings.filterwarnings(action='ignore')
 # parser
 parser = argparse.ArgumentParser(description='Pre-processing')
 parser.add_argument('--sr', type=int, default=22050, help='Sampling rate')
+parser.add_argument('--size', type=str, default='medium', help='size')
 args = parser.parse_args()
 
 
@@ -32,17 +33,17 @@ def mp3_to_npy(from_dir, to_dir, audio_df, sr):
 
 def main():
     try:
-        os.mkdir('./data/fma_medium_npy')
+        os.mkdir(f'./data/fma_{args.size}_npy')
     except:
         pass
 
-    folder_list = os.listdir('./data/fma_medium')
+    folder_list = os.listdir(f'./data/fma_{args.size}')
     folder_list.remove('README.txt')
     folder_list.remove('checksums')
 
     audio_df = pd.DataFrame(columns = ['track'])
     for folder in folder_list:
-        audio_df = mp3_to_npy(folder,'./data/fma_medium_npy/', audio_df, args.sr)
+        audio_df = mp3_to_npy(folder,f'./data/fma_{args.size}_npy/', audio_df, args.sr)
         
 
 if __name__ == '__main__':
