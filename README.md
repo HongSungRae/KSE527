@@ -55,6 +55,15 @@ python preprocessing.py --size small
 ```
 
 ### 2.4 PreTraining -> Transfer Learning -> Inference
+1. PreTraining
+```
+```
+2. Transfer learning to downstream task
+```
+```
+3. Inference and performance
+```
+```
 
 ## 3. Results
 ### 3.1 Image Augmentation For Audio Spectrogram
