@@ -5,13 +5,13 @@
 (대충 소개)
 
 ## 2. How To Use?
-### 2.1 환경설정
-1. 여러분의 PC나 서버에 GPU가 있고 cuda setting이 되어있어야합니다.
-2. 여러분의 환경에 이 repo를 clone합니다 : ```git clone <this_repo>```
-3. requirements libraries를 확인합니다 : ```pip install -r requirements.txt```
+### 2.1 Environment Setting
+1. Your PC or server should have a GPU and cuda setting.
+2. Clone this repo to your environment. : ```git clone <this_repo>```
+3. Check the requirements. : ```pip install -r requirements.txt```
 
 ### 2.2 Dataset Download
-1. fma_small과 fma_medium을 npy file로 미리 변환한 데이터를 링크에서 다운로드합니다.
+1. Download ```fma_small``` and ```fma_medium``` from the [](https://github.com/mdeff/fma).
 2. ```./data``` 에 다운로드 받은 두 폴더를 모두 넣어주세요.
 3. ```ffmpeg.exe```를 링크에서 다운받아서 LOCAL ```./```에 넣어주세요.
 ---
@@ -20,27 +20,23 @@
 ```
 <KSE527>
     ├ <data>
-        ├ <fma_medium_npy>
-            ├ 000002.npy
-            ├ 000003.npy
-            ...
-            └ 155314.npy
-        ├ <fma_small_npy>
-            ├ 000002.npy
-            ├ 000003.npy
-            ...
-            └ 155314.npy
+        ├ <fma_medium>
+        ├ <fma_small>
         ├ genre_dic_medium.npy
         └ genre_dic_small.npy
-    ├ constants.py
+    ├ <models>
+        ├ simsiam.py
+        └ tester.py
+    ├ augmentation.py
     ├ dataset.py
-    ├ loss.py
-    ├ main.py
-    ├ metric.py
-    ├ model.py
+    ├ ffmpeg.exe
+    ├ metrics.py
+    ├ parameters.py
+    ├ preprocessing.py
+    ├ supervise.py
+    ├ train_simsiam.py
+    ├ tansfer.py
     ├ utils.py
-    ├ EDA.ipynb
-    ├ prerprocessing.ipynb
     ├ LICENSE
     ├ requirements.txt
     └ README.md                           
