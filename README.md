@@ -13,7 +13,7 @@
 ### 2.2 Dataset Download
 1. Download ```fma_small``` and ```fma_medium``` from the [LINK](https://github.com/mdeff/fma).
 2. Put ```fma_small``` and ```fma_medium``` to ```./data``` folder.
-3. Download ```ffmpeg.exe``` from [LINK](https://www.ffmpeg.org/download.html) and put it to ```./```.. For Koreans [this page](https://m.blog.naver.com/chandong83/222095346417) can help you.
+3. Download ```ffmpeg.exe``` from [LINK](https://www.ffmpeg.org/download.html) and put it to ```./```. For Koreans [this page](https://m.blog.naver.com/chandong83/222095346417) can help you.
 ---
 *If your Local environment is as below, you're all set!*
 ---
