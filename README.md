@@ -21,13 +21,15 @@
 <KSE527>
     ├ <data>
         ├ <fma_medium_npy>
-            ├ <annotation>
-            ├ <ECG>
+            ├ 000002.npy
+            ├ 000003.npy
             ...
-            └ embedding_768.npy
+            └ 155314.npy
         ├ <fma_small_npy>
-            ├ <annotation>
-            ├ <ECG>
+            ├ 000002.npy
+            ├ 000003.npy
+            ...
+            └ 155314.npy
         ├ genre_dic_medium.npy
         └ genre_dic_small.npy
     ├ constants.py
