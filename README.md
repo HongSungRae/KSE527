@@ -103,7 +103,7 @@ python transfer.py --num_epochs 100
 ![](https://github.com/HongSungRae/KSE527/blob/main/archive/table2.png?raw=true)
 
 ### 3.3 LaTeX Formed Report
-[Here is the link to LaTeX formed report](https://erratic-tailor-f01.notion.site/SungRae_Hong-72b31ae6f5384e1eaf9c91151f75ad0f)
+[Here is the link to LaTeX formed report](https://github.com/HongSungRae/KSE527/blob/main/archive/KSE527_Final_Report.pdf)
 
 ## Acknowledgement in Korean
 - 플젝 잘 끝내서 모두에게 감사합니다.
