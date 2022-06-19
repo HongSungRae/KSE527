@@ -2,7 +2,7 @@
 > Team Project of KSE527, Spring 2022
 
 ## 1. Introduction
-(대충 소개)
+ Self-supervised learning is in the spotlight as a way to solve the problem of data-hunger of deep learning. Especially, in the music domain, self-supervised learning is attracting solution as a way to solve the high-cost and high-labor problem of labeling numerous songs. However, self-supervised learning has a collapsing problem that outputs a constant solution. To solve this problem, a method has been devised to give the network a variety of augmentation that is difficult to match. Until now, a method of applying augmentation to the time axis or frequency axis of audio has been used, but we propose a method of using image augmentation by converting audio into a spectrogram. This method is easier, and has advantages in performance.
 
 ## 2. How To Use?
 ### 2.1 Environment Setting
